@@ -48,11 +48,8 @@ const Home = () => {
     <>
       <Head lang='en'>
         <title>Da Blog by Rob</title>
-        <meta
-          name='description'
-          content='Blog project by Rob, assignment at cme educations, a blog using supabase and next.js amongts other libraries'
-        />
-        <meta property='og:title' content='Da blog by Rob' />
+        <meta name='description' content='blog project for sharing stories' />
+        <meta property='og:title' content='Stories by Rob' />
       </Head>
       <div className={styles.home}>
         <Heading>
@@ -63,10 +60,10 @@ const Home = () => {
         <div className={`${styles.latest}`}>
           <h2 className={styles.sub_title}>
             <span className={`${styles.p} ${styles.first}`}>
-              Check out the latest post right here!
+              Stories shared by good people
             </span>
             <span className={`${styles.p} ${styles.second}`}>
-              Check out the latest post right here!
+              Stories shared by good people
             </span>
           </h2>
         </div>
@@ -75,7 +72,7 @@ const Home = () => {
             posts.map((item) => (
               <div key={item.title}>
                 <BlogCard {...item} />
-            </div>
+              </div>
             ))
           ) : (
             <span style={{ color: '#fafafa' }}>Loading...</span>
