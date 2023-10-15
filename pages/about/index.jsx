@@ -44,108 +44,46 @@ export default function About() {
         <div className={styles.overlay}></div>
       </div>
       <div className={styles.about_wrapper}>
-        
-        <h2>Robert &apos;Rob-One&apos; Wägar</h2>
+        <h2>STORIES</h2>
         <section>
           <p>
-            I&apos;m a Dad to two beautiful boys, I&apos;m a developer &
-            I&apos;m a dancer(dance teacher)
-            <br />
-            Yes I got two professions and both are also my hobbies. I have the
-            opportunity to be creative, and learn new things while working, this
-            is awesome and gives me a boost everyday. <br />
-            I love both of my jobs! I found good helpful friends in both
-            industries & I&apos;m greatful for this. I see myself as a tech and
-            dance &quot;nerd&quot; <br />I speak Swedish, Finnish & English, I
-            love great movies mostly classics & cartoons, taking long walks in
-            the forest to clear my mind and breathe
+            Welcome to &quot;Stories&quot; a captivating haven where the art of
+            storytelling comes alive. Immerse yourself in a world where words
+            dance on the page, weaving tales that span the spectrum of human
+            experience. Our blog is a tapestry of emotions, adventures, and
+            untold narratives waiting to unfold.
           </p>
-        </section>
-        <section>
-          <h2 className='textSplit fadeInRight stop'>My developer work</h2>
           <p>
-            Is to build smart user interfaces & useful interactions and develop
-            functionality of web pages with Javascript, React, Next.js with
-            sass, styled-components, tailwind, framer-motion, anime.js, MERN
-            stack, currently learning supabase and typescript always on the
-            lookout for whats new in tech.
-            <br />I have also done smaller and mid scale projects. Below you can
-            see an example of a project I did for a customer in LA / US
-            (upgrading from wordpress to nextjs, still using wp as a headless
-            cms)
-            <br />
-            <a
-              href='https://www.lockerlegends.org/'
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              LockerLegends website
-            </a>
-            ... Im also currently back on updating his webpage and working for
-            lockerlegends at the moment on my free time
+            In &quot;Stories&quot; we believe in the power of stories to
+            connect, inspire, and transport. Each entry is a carefully crafted
+            journey that invites you to explore the depths of imagination and
+            the vast landscapes of the human heart. From heartwarming anecdotes
+            that tug at your emotions to thrilling adventures that keep you on
+            the edge of your seat, our blog is a celebration of the written word
+            in all its splendor.
           </p>
-        </section>
-        <section>
-          <h2 className='textSplit fadeInRight stop'>
-            Inspiration Ideas Creativity
-          </h2>
           <p>
-            {' '}
-            I&apos;m always looking for creative solutions in everythings life.
-            Without creativity we would be standing still, to inspire others to
-            find and learn new things, is one of the hightlight of my life. I
-            love seeing others reach their goals and make their dreams come
-            true. I&apos;m happy that I have been able to help others, inspiring
-            new generations in dancing, and in the future looking forward to
-            help new developers
+            Dive into the diverse realms of fiction and non-fiction, where
+            characters come to life and experiences are shared with an
+            authenticity that resonates. &quot;Stories&quot; is not just a blog;
+            it&apos;s a sanctuary for those who seek refuge in the beauty of
+            language and the richness of storytelling.
           </p>
-        </section>
-        <section>
-          <h2 className='textSplit fadeInRight stop'>
-            Creativity art design and technology
-          </h2>
           <p>
-            I belive that these skills with the right mindset & in the right
-            hands, is the &apos;tools&apos; to solve our future problems. We
-            should always thrive to find new and better ways, and keep in mind
-            that we are creative beings, if allowed to enhance and boost those
-            abilities
+            Whether you&apos;re a fervent reader or an aspiring writer,
+            &quot;Stories&quot; is your sanctuary. Join us on this literary
+            odyssey as we embark on a journey through the enchanting landscapes
+            of imagination. Discover the magic within the mundane, the
+            extraordinary within the ordinary, and the beauty that lies in the
+            simplicity of a well-told story.
           </p>
-        </section>
-        <section>
-          <h2 className='textSplit fadeInRight stop'>My work as a dancer</h2>
           <p>
-            I been working with artforms within the dance &quot;world&quot;,
-            since 1990, performing, teaching, organizing, helping schools to
-            find &quot;streetdance&quot; teachers, mentoring dancers, set
-            schedules, worked with different projects, also with non-profit
-            organizations and inspired the youth and kids to move their bodies.
-            I&apos;ve aslo been deeply involved and interested in the artforms
-            and culture of HIP-HOP & FUNK, a deep passion for the dance style &
-            artform of locking
-            <br />
-          </p>
-        </section>
-        <section>
-          <h2 className='textSplit fadeInRight stop'>
-            Dance and code? Connection?
-          </h2>
-          <p>
-            Working with creativity and artforms has helped me a lot in my life,
-            and now when I&apos;m coding I see the similarities between the two.
-            Co-work, team-work is a key to better &quot;performance&quot; and
-            also communication is must to be able to work together. If there is
-            a problem, analyze it and find a solution.
-            <br />
-            In the artform of Hip-Hop, there is a saying - ALWAYS A STUDENT, in
-            otherwords always be open to learn new, so this is what I saw in
-            programming, and it might not be the same vocabulary, but the same
-            thought. <br />
-            <br />
-            Today both dancing and developing, learning new as I go and working
-            with this for a few years, coding just becomes more fun for everyday
-            that passes. :D
-            <br />
+            Indulge your curiosity, ignite your imagination, and let the pages
+            of &quot;Stories&quot; be your portal to a world where every word
+            has a story to tell. Welcome to a community bound by the love of
+            narratives, where each post is a doorway to a new adventure. Join us
+            as we unravel the threads of tales waiting to be told—welcome to the
+            enchanting world of &quot;Stories&quot;
           </p>
         </section>
       </div>

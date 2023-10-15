@@ -16,14 +16,19 @@
   }
 
   .container {
+    position: relative;
     margin: 0 auto;
     margin-top: 0vh;
     margin-left: 20vw;
     margin-bottom: 20vh;
-    width: 55%;
+    width: 65%;
     height: 100%;
     padding-bottom: 40px;
     border-bottom: 1px solid #525252;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    overflow: hidden;
 
   @media screen and (max-width: 768px) {
     margin-left: 0vw;
@@ -34,46 +39,56 @@
   }
   
   .link_wrapper {
-    padding: 10px 20px;
+    position: relative;
+    padding: 0;
     background: #f8f8f8;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: 10px;
     border: 1px solid transparent;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 40vw;
+    height: 40vh;
     
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 8px rgba(0,0,0,0.4);
-      border: 1px solid #ee5f0c;
-      cursor: pointer;
-  }
+      box-shadow: 6px 6px 2px rgb(240, 73, 7);
+      border-bottom: 1px solid #ee5f0c;
+    }
   }
 
   // fixing this to a card
   .link {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    padding: 0.25rem 0;
+    width: 100%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-    padding: 0 0.25rem;
-    gap: 0.25rem;
+   
     color: inherit;
     text-decoration: none;
     font-weight: 500;
     border-radius: 10px;
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid transparent;
     transition: all 0.3s ease-in-out;
 
     >img {
       position: absolute;
+      width: 100%;
+      height: 50%;
       border-radius: 10px;
       object-fit: cover;
-      object-position: center center;
+      object-position: center;
     }
 
     .empty {
-      width: 100px;
-      height: 78px;
+      width: 100%;
+      height: 50%;
       background-image: linear-gradient(315deg, #ee9417 0%, #fe5858 74%);
       position: absolute;
       border-radius: 10px;
@@ -106,17 +121,6 @@
         }
       }
 
-    }
-  
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 3px 6px 2px rgb(240, 73, 7);
-      border-bottom: 1px solid #ee5f0c;
-
-      > img,
-       .empty {
-        box-shadow: 3px 3px 2px rgb(240, 73, 7);
-      }
     }
 }
 

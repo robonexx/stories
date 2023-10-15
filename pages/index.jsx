@@ -8,6 +8,9 @@ import useSWR from 'swr';
 import { getPosts, cacheKey } from '@/api-routes/posts';
 import { motion } from 'framer-motion';
 import HomeHeading from '@components/pageHeadings/homeHeading';
+import BlogContainer from '@components/blogcontainer/BlogContainer';
+import BlogCard from '@components/blogcard/BlogCard';
+
 // styles
 import styles from './Homepage.module.scss';
 
@@ -56,41 +59,28 @@ const Home = () => {
           <HomeHeading />
         </Heading>
         {/*  <HomeGrid /> */}
-       {/*  <h2 className={styles.latest}>Latest posts: </h2> */}
+        {/*  <h2 className={styles.latest}>Latest posts: </h2> */}
         <div className={`${styles.latest}`}>
           <h2 className={styles.sub_title}>
-          <span className={`${styles.p} ${styles.first}`}>
-            Check out the latest post right here!
-          </span>
-          <span className={`${styles.p} ${styles.second}`}>
-            Check out the latest post right here!
-          </span>
+            <span className={`${styles.p} ${styles.first}`}>
+              Check out the latest post right here!
+            </span>
+            <span className={`${styles.p} ${styles.second}`}>
+              Check out the latest post right here!
+            </span>
           </h2>
         </div>
-        <div className={styles.container}>
+        <BlogContainer>
           {posts.length > 0 ? (
             posts.map((item) => (
-              <div className={styles.box} key={item.title}>
-                <span className={styles.title}>{TitleEfx(item.title)}</span>
-                {item.image ? (
-                  <Image
-                    className={styles.img}
-                    alt={item.title}
-                    src={item.image}
-                    loading='lazy'
-                    width={800}
-                    height={400}
-                  />
-                ) : (
-                  <span className={styles.emptyImg}>no img</span>
-                )}
-                <Link href={`/blog/${item.slug}`}></Link>
-              </div>
+              <div key={item.title}>
+                <BlogCard {...item} />
+            </div>
             ))
           ) : (
             <span style={{ color: '#fafafa' }}>Loading...</span>
           )}
-        </div>
+        </BlogContainer>
       </div>
     </>
   );

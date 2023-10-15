@@ -18,7 +18,7 @@
     z-index: 10;
   }
   
-  .container .box {
+  .container .card {
     position: relative;
     width: 100%;
     height: 300px;
@@ -31,23 +31,17 @@
         overflow: hidden;
   }
 
-  .container .box:hover {
+  .container .card:hover {
     transition: all 0.4s ease-in-out;
     border-radius: 10px;
     transform: translateY(-3px);
-    box-shadow: 3px 6px 2px rgba(240, 73, 7, 0.267);
     border: 1px solid rgba(0,0,0,.125);
     cursor: pointer;
-
-    box-shadow: 0 0 5px #d46d44c9,
-                    0 0 15px #c56a36b6,
-                    0 0 25px #a33f106e,
-                    0 0 50px #61260434;
-         -webkit-box-reflect:below 1px linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.205) 40%);
+        /*  -webkit-box-reflect:below 1px linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.205) 40%); */
          z-index: 100;
   }
   
-  .container .box img {
+  .container .card img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -57,13 +51,13 @@
     
   }
 
-  .container .box:hover img {
+  .container .card:hover img {
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-    mix-blend-mode: color-dodge;
+    filter: grayscale(0);
     scale: 1.2;
   }
 
-  .container .box a {
+  .container .card a {
     position: absolute;
     left: 0;
     top: 0;
@@ -94,7 +88,7 @@
     }
   }
 
-  .container .box .emptyImg {
+  .container .card .emptyImg {
     position: absolute;
     display: grid;
     place-content: center;
@@ -114,14 +108,14 @@
     z-index: 10;
   }
 
-  .container .box .title {
+  .container .card .title {
     position: absolute;
     z-index: 100;
     top: 1vh;
     left: 0.25rem;
     padding: 0.5rem 1rem;
     background-color: #1b1b1b;
-    color: #fe5858;
+    color: #fafafa;
     border-radius: 10px;
   }
 
@@ -230,11 +224,11 @@
   }
 
   .first {    
-    animation: first 4s linear infinite;
+    animation: first 10s linear infinite;
   }
 
   .second {
-    animation: second 4s linear infinite;
+    animation: second 10s linear infinite;
   }
 
 }

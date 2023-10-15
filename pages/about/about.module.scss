@@ -3,28 +3,6 @@
     padding: 0;
     overflow: hidden;
 
-   /*  .content_wrapper {
-      position: fixed;
-      top: 20vh;
-      left: 5%;
-      width: 90%;
-      pointer-events: none;
-      display: none;
-
-      @media screen and (min-width: 768px) {
-        top: 20vh;
-        left: auto;
-        right: 5vw;
-        width: 30vw;
-        display: block;
-      }
-
-        marquee {
-           width: 80%;
-            color: #cccccc;
-        }
-      } */
-
 .about_hero {
     margin: 0;
     padding: 0;
@@ -35,15 +13,15 @@
     z-index: -1;
     max-width: 100%;
     min-height: 50vh;
-    background-image: url('../../public/images/robertwagar.webp');
+    background-image: url('../../public/images/cozycafe.jpg');
     background-repeat: no-repeat;
-    background-position: center left 10%;
-    background-size: 100vh;
+    object-fit: cover;
+    object-position: center;
     opacity: 1;
 
   
     @media screen and (min-width: 768px) {
-      background-position: center 25%;
+      background-position: center center;
       background-size: 100%;
     }
 
@@ -70,6 +48,7 @@
       justify-content: space-evenly;
       align-items: center;   
       color: #ececec;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 
       @media(max-width: 960px) {
         margin: 30vh auto;
@@ -85,12 +64,12 @@
         transition: all 0.5s ease;
         letter-spacing: 4px;
         background-color: transparent;
-        background: #db491cc7;
+        background: #424141c7;
         color: #ffffff;
-        box-shadow: 0 0 5px #eb9a7a,
-                    0 0 25px #eba37ab6,
-                    0 0 50px #eb9e7a6e,
-                    0 0 100px #eba37a34;
+        box-shadow: 0 0 5px #2c2b2a,
+                    0 0 25px #0c0c0cb6,
+                    0 0 50px #1817176e,
+                    0 0 100px #0f0f0f34;
          -webkit-box-reflect:below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.205));
 
          &:hover {
@@ -116,10 +95,8 @@
 
             p {
                 width: 90%;
-                padding: 2rem 2rem 1rem;
+                padding: 0 2rem;
                 margin: 2rem auto 0;
-                color: rgb(17, 17, 17);
-                background-color: #fafafa;
             }
         }
   
