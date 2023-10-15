@@ -56,6 +56,27 @@
         border-radius: 10px;
         z-index: 100;
       }
+
+      .bottom_row {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0.5rem 1rem;
+        width: 100%;        
+        display: inline-flex;
+        background-color: #1b1b1b;
+        z-index: 10;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      
+      .date {
+        font-family: monospace;
+      }
+      
+      .author {
+        font-family: monospace;
+      }
   }
 
   .card .emptyImg {

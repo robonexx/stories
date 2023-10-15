@@ -14,6 +14,8 @@ import { filteredPosts } from '@/utils/filteredPosts';
 import styles from './blog.module.scss';
 import { motion } from 'framer-motion';
 import BlogSlugCard from './blogSlugCard';
+import BlogContainer from '@/components/blogcontainer/BlogContainer';
+import BlogCard from '@/components/blogcard/BlogCard';
 
 export default function Blog() {
   const [query, setQuery] = useState('');
@@ -69,26 +71,27 @@ export default function Blog() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0, duration: 2 }}
       >
-        {results
-          ? results
-              .sort((a, b) => {
-                const aDate = new Date(a.created_at);
-                const bDate = new Date(b.created_at);
-                return bDate - aDate;
-              })
-              .map((post, i) => (
-                <motion.div
+        <BlogContainer>
+          {results
+            ? results
+                .sort((a, b) => {
+                  const aDate = new Date(a.created_at);
+                  const bDate = new Date(b.created_at);
+                  return bDate - aDate;
+                })
+                .map((post, i) => (
+                  <motion.div
                   key={post.slug}
-                  className={styles.link_wrapper}
                   /*  initial={{ opacity: 0, x: i % 2 === 0 ? -100 : 100 }} */
                   initial={{ opacity: 0, y: i % 1 === 0 ? -100 : 100 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: i * 0.2 }}
-                >
-                  <BlogSlugCard {...post} />
-                </motion.div>
-              ))
-          : ''}
+                  >
+                    <BlogCard {...post} />
+                  </motion.div>
+                ))
+            : ''}
+        </BlogContainer>
       </motion.section>
     </div>
   );
