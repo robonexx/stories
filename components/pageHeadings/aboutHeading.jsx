@@ -11,7 +11,7 @@ const pathVariants = {
   },
   visible: {
     pathLength: 1,
-    strokeWidth: 4,
+    strokeWidth: 2,
     stroke: '#ee5f0c',
     transition: {
       duration: 1,
@@ -25,10 +25,10 @@ const pathVariants = {
       '#fafafa00',
       '#fafafa00',
       '#2c2c2b25',
-      '#ffffff4d',
-      '#ffffff80',
-      '#ffffffbd',
-      '#ffffff',
+      '#5a5a5a4d',
+      '#55555580',
+      '#303030bc',
+      '#1d1d1d',
     ],
   },
 };
