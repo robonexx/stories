@@ -1,79 +1,77 @@
 .card {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 1rem;
-    break-inside: avoid;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  border-radius: 10px;
+  background-color: transparent;
+  background: #000000c7;
+  color: #ffffff;
+  overflow: hidden;
+
+  &:hover {
+    transition: all 0.4s ease-in-out;
     border-radius: 10px;
-    background-color: transparent;
-    background: #db491cc7;
-        color: #ffffff;
-        overflow: hidden;
+    transform: translateY(-3px);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    z-index: 100;
 
-        &:hover {
-          transition: all 0.4s ease-in-out;
-          border-radius: 10px;
-          transform: translateY(-3px);
-          border: 1px solid rgba(0,0,0,.125);
-          cursor: pointer;
-              /*  -webkit-box-reflect:below 1px linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.205) 40%); */
-               z-index: 100;
-        }
-
-        > img {
-         width: 100%;
-         height: 100%;
-         border-radius: 10px;
-         object-fit: cover;
-         object-position: center;
-         filter: grayscale(1);
-
-         &:hover {
-            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-            filter: grayscale(0);
-            scale: 1.2;
-          }
-         
-       }
-
-       a {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        width: 100%;
-        height: 100%;
-      }
-
-      .title {
-        position: absolute;
-        top: 1vh;
-        left: 0.25rem;
-        padding: 0.5rem 1rem;
-        display: inline-flex;
-        background-color: #1b1b1b;
-        color: #fafafa;
-        border-radius: 10px;
-        z-index: 100;
-      }
+    > img {
+      transition: all 0.6s ease-in-out;
+      filter: grayscale(0);
+      scale: 1.2;
+    }
   }
 
-  .card .emptyImg {
-    position: absolute;
-    display: grid;
-    place-content: center;
-    background-color: #fe5858;
-    background-image: linear-gradient(315deg, #ee9417be 0%, #fe5858cb 74%);
+  > img {
     width: 100%;
     height: 100%;
-    height: 300px;
-    margin-bottom: 10px;
-    font-family: monospace;
-    font-size: 1.2rem;
-    font-weight: 200;
-    break-inside: avoid;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
-    z-index: 10;
-  } 
+    filter: grayscale(0.7);
+  }
+
+  a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    position: absolute;
+    top: 1vh;
+    left: 0.25rem;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    background-color: #1b1b1b;
+    color: #fafafa;
+    border-radius: 10px;
+    z-index: 100;
+  }
+}
+
+.card .emptyImg {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  background-color: #afafaf;
+  background-image: linear-gradient(315deg, #ecd1abbe 0%, #835757cb 74%);
+  width: 100%;
+  height: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: 200;
+  break-inside: avoid;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 10;
+}

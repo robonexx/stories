@@ -60,7 +60,7 @@ const Home = () => {
         </Heading>
         {/*  <HomeGrid /> */}
         {/*  <h2 className={styles.latest}>Latest posts: </h2> */}
-        <div className={`${styles.latest}`}>
+        {/* <div className={`${styles.latest}`}>
           <h2 className={styles.sub_title}>
             <span className={`${styles.p} ${styles.first}`}>
               Check out the latest post right here!
@@ -69,7 +69,7 @@ const Home = () => {
               Check out the latest post right here!
             </span>
           </h2>
-        </div>
+        </div> */}
         <BlogContainer>
           {posts.length > 0 ? (
             posts.map((item) => (
