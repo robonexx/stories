@@ -4,7 +4,7 @@
     position: relative;
     padding: 10px 20px;
     background: #f8f8f8;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-bottom: 2rem;
     border: 1px solid transparent;
     transition: all 0.2s ease-in-out;
@@ -45,7 +45,7 @@
   left: 1.25rem;
   font-family: monospace;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   z-index: 2;
 
   &:hover {
@@ -61,7 +61,7 @@
     position: relative;
     padding: 10px 40px;
     background: #e6e6e6;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-bottom: 1rem;
     border: 1px solid transparent;
     transition: all 0.2s ease-in-out;

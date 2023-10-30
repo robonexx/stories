@@ -11,7 +11,8 @@
 
 .editor {
   border: 1px solid rgb(136, 136, 136);
-  border-radius: 5px;
+  border-radius: 2px;
+
   padding: 5px;
   padding: 1rem;
   color: #fafafa;

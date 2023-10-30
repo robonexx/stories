@@ -72,7 +72,7 @@ export default function BlogPost() {
           name='description'
           content={body ? removeHTML(body).split(' ', 6).join(' ') + '...' : ''}
         />
-        <meta property='og:title' content='Da blog by Rob' />
+        <meta property='og:title' content='Stories a open blog' />
       </Head>
       <section className={styles.container}>
         <span className={styles.go_back} onClick={() => router.back()}>

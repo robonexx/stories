@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <>
       <Head lang='en'>
-        <title>Da Blog by Rob</title>
+        <title>Stories</title>
         <meta name='description' content='blog project for sharing stories' />
         <meta property='og:title' content='Stories by Rob' />
       </Head>
