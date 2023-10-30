@@ -8,6 +8,7 @@ import useSWR from 'swr';
 import { getPosts, cacheKey } from '@/api-routes/posts';
 import { motion } from 'framer-motion';
 import HomeHeading from '@components/pageHeadings/homeHeading';
+import StoriesHeading from '@components/pageHeadings/storiesHeading';
 import BlogContainer from '@components/blogcontainer/BlogContainer';
 import BlogCard from '@components/blogcard/BlogCard';
 
@@ -53,7 +54,8 @@ const Home = () => {
       </Head>
       <div className={styles.home}>
         <Heading>
-          <HomeHeading />
+          {/*  <HomeHeading /> */}
+          <StoriesHeading />
         </Heading>
         {/*  <HomeGrid /> */}
         {/*  <h2 className={styles.latest}>Latest posts: </h2> */}
