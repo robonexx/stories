@@ -1,10 +1,10 @@
 
 .socials {
     position: fixed;
-    right: 0rem;
-    top: 30vh;
+    right: 1rem;
+    top: 8vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -12,11 +12,11 @@
     transition: all .3s ease-in-out 0s;
 
     @media screen and (min-width: 1185px) {
-        left: 0;
-        right: auto;
-        flex-direction: row;
-        bottom: 5vh;
-        top: auto;
+        right: 0;
+        left: auto;
+        flex-direction: column;
+        bottom: auto;
+        top: 40vh;
          }    
 
       .soc_item {
@@ -28,7 +28,7 @@
 
         &:hover {
             color: #ec4d37;
-            filter: drop-shadow(0px -4px 2px rgba(255, 255, 255, 0.432));
+            filter: drop-shadow(0px -1px 1px rgba(255, 255, 255, 0.432));
             }
       }
 
@@ -36,14 +36,14 @@
         z-index: 19;
         color: #b8b8b8;
         filter: drop-shadow(1px 1px #333333a4);
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
         text-align: center;
         transition: all .3s ease-in-out;
     
         @media (min-width: 1185px) {
-            width: 48px;
-            height: 48px;
+            width: 32px;
+            height: 32px;
            }      
       }
     }

@@ -14,7 +14,7 @@ import { timeAgo } from '@/utils/timeAgo';
 import { removeHTML } from '@/utils/removeHTML';
 import Comments from './commentsSection/comments/comments';
 import AddComment from './commentsSection/addComment/AddComment';
-import { RiArrowLeftCircleFill } from 'react-icons/ri'
+import { RiArrowLeftCircleFill } from 'react-icons/ri';
 
 export default function BlogPost() {
   const [msg, setMsg] = useState(false);

@@ -5,8 +5,8 @@
   border-bottom: 1px solid #888;
   color: #fafafa;
 
-  @media screen and (min-width: 768px) {
-    margin: 10vh auto 0;
+  @media screen and (min-width: 980px) {
+    margin: 0vh auto 0;
     width: 50%;
   }
 
@@ -74,6 +74,12 @@
   transition: all 0.4s ease;
   z-index: 100;
   cursor: pointer;
+
+  @media screen and (min-width: 769px) {
+    top: 20vh;
+    left: 25%;
+  
+  }
 
 > svg {
   font-size: 1.4rem;

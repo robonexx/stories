@@ -57,7 +57,7 @@ const Home = () => {
         </Heading>
         {/*  <HomeGrid /> */}
         {/*  <h2 className={styles.latest}>Latest posts: </h2> */}
-        <div className={`${styles.latest}`}>
+        {/* <div className={`${styles.latest}`}>
           <h2 className={styles.sub_title}>
             <span className={`${styles.p} ${styles.first}`}>
               Stories shared by good people
@@ -66,7 +66,7 @@ const Home = () => {
               Stories shared by good people
             </span>
           </h2>
-        </div>
+        </div> */}
         <BlogContainer>
           {posts.length > 0 ? (
             posts.map((item) => (

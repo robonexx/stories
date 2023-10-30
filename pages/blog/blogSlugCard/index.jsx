@@ -6,13 +6,14 @@ import styles from '../blog.module.scss';
 
 const BlogSlugCard = ({ title, slug, created_at, author, image }) => {
   return (
-      <Link className={styles.link} href={`/blog/${slug}`}>
-        {image ?  (<Image alt={title}
-              src={image}
-              height={78}
-              width={100}
-          />) : <span className={styles.empty}>No Image</span>}
-      <div>
+    <Link className={styles.link} href={`/blog/${slug}`}>
+      <div className={styles.wrapper}>
+      {image ? (
+        <Image alt={title} src={image} height={78} width={100} />
+      ) : (
+        <span className={styles.empty}>No Image</span>
+      )}
+      <div className={styles.info_wrapper}>
         <p>{title}</p>
         <div className={styles.bottom_row}>
           <time className={styles.date}>{convertDate(created_at)}</time>
@@ -22,6 +23,8 @@ const BlogSlugCard = ({ title, slug, created_at, author, image }) => {
             ''
           )}
         </div>
+      </div>
+
       </div>
     </Link>
   );
