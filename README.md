@@ -1,27 +1,11 @@
 <!-- https://github.com/devicons/devicon/blob/v2.15.1/icons/postgresql/postgresql-original.svg -->
 # DA BLOG 👋 
 
-## Assignment in webbservers and databases at CME 😀
+## Stories blog
 
-This was a fun project and very useful, I've done some earlier backend stuff using wordpress and mySql first, then SQL doing a C# course.
-I've also worked with mongoDB and Firebase and must say thing Supabase made some stuff easy to use and very good documentation over the plattform
-They have a very nice free tier to learn the basics, and good youtube tutorials too. 
-Using supabase with NEXT.js was awesome.
-
-Ive done some minor animtations using Framer-motion and created SVG texts in Figma
+Blog project using nextjs, supabase
 
 Used Trello to have sprints and have log
-
-## Bugs and fixes
-- Need to check why comments dont appear each time loading page
-- some stuttering on homepage on scroll... even if removing animations
-- supabase issues with users, needs to be checked and fixed
-
-I will continue to build on this project and do a few more using nextjs and supabase, it is in my opinion a very powerful combination. 🚀 BIG LIKE
-
-### You can read all the assignment qualifications on the assignment.md file
-<a href="https://github.com/xxrobone/dablog/blob/main/Assignment.md" target="blank">Assignment read me</a>
-
 
 ## Tech Used in this project 💻
 <details>
